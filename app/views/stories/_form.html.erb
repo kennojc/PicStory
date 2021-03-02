@@ -26,6 +26,10 @@
     <%= form.text_area :content, id: :story_content %>
   </div>
 
+   <div class="field">
+    <%= form.hidden_field :user_id, value: current_user.id , id: :story_user_id  %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

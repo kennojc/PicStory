@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'personal/mypage'
+
   devise_for :users
   resources :stories
   root 'stories#index'
